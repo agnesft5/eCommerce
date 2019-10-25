@@ -65,8 +65,9 @@ function getHome(arrayProductos) {
         let imgLink = product["imageURL"]
 
         let prodContainer = document.querySelector(".products__container")
-        prodContainer.className ="wrapper-grey cardcontainer__wrapper products__container"
-        let productos = `<div class="container"><h1 class="text-center p-5">Productos</h1><div class="row"><div class="col-sm-6 w-100 text-center"><div class="card text-white w-100 background__size" style=" background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url('${imgLink}')"><h5 class="card__name">${productName}</h5><div class="card__description"><p class="product__description">${productDescription}</p><p class="card__text">${productPrice} ${priceUnit}</p><button type="button" class="btn btn-link">Añadir al carrito <i class="fa fa-shopping-cart"></i></button></div></div></div></div></div>`
+        let prodBanner = document.querySelector(".cardcontainer__wrapper")
+        prodBanner.className = "wrapper-grey cardcontainer__wrapper"
+        let productos = `<div class="col-sm-6 w-100 text-center"><div class="card text-white w-100 m-5 background__size" style="background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url('${imgLink}')"><h5 class="card__name">${productName}</h5><div class="card__description"><p class="product__description"></p><p class="card__text">${productPrice} ${priceUnit}</p><button type="button" class="btn btn-link">Añadir al carrito <i class="fa fa-shopping-cart"></i></button></div></div></div>`
         prodContainer.innerHTML += productos;
     }
 }
@@ -79,12 +80,13 @@ function getElectronics(arrayProductos) {
         let productName = product["name"]
         let productDescription = product["description"]
         let productPrice = product["price"]
-        let priceUnit = product["price"]
+        let priceUnit = product["unit"]
         let imgLink = product["imageUrl"]
 
         let prodContainer = document.querySelector(".products__container")
-        prodContainer.className ="wrapper-grey cardcontainer__wrapper products__container"
-        let productos = `<div class="container"><h1 class="text-center p-5">Productos</h1><div class="row"><div class="col-sm-6 w-100 text-center"><div class="card text-white w-100 background__size" style=" background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url('${imgLink}')"><h5 class="card__name">${productName}</h5><div class="card__description"><p class="product__description">${productDescription}</p><p class="card__text">${productPrice} ${priceUnit}</p><button type="button" class="btn btn-link">Añadir al carrito <i class="fa fa-shopping-cart"></i></button></div></div></div></div></div>`
+        let prodBanner = document.querySelector(".cardcontainer__wrapper")
+        prodBanner.className = "wrapper-grey cardcontainer__wrapper"
+        let productos = `<div class="col-sm-6 w-100 text-center"><div class="card text-white w-100 m-5 background__size" style="background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url('${imgLink}')"><h5 class="card__name">${productName}</h5><div class="card__description"><p class="product__description"></p><p class="card__text">${productPrice} ${priceUnit}</p><button type="button" class="btn btn-link">Añadir al carrito <i class="fa fa-shopping-cart"></i></button></div></div></div>`
         prodContainer.innerHTML += productos;
     }
 }
@@ -97,12 +99,13 @@ function getFashion(arrayProductos) {
         let productName = product["name"]
         let productDescription = product["description"]
         let productPrice = product["price"]
-        let priceUnit = product["price"]
+        let priceUnit = product["unit"]
         let imgLink = product["imageUrl"]
 
         let prodContainer = document.querySelector(".products__container")
-        prodContainer.className ="wrapper-grey cardcontainer__wrapper products__container"
-        let productos = `<div class="container"><h1 class="text-center p-5">Productos</h1><div class="row"><div class="col-sm-6 w-100 text-center"><div class="card text-white w-100 background__size" style=" background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url('${imgLink}')"><h5 class="card__name">${productName}</h5><div class="card__description"><p class="product__description">${productDescription}</p><p class="card__text">${productPrice} ${priceUnit}</p><button type="button" class="btn btn-link">Añadir al carrito <i class="fa fa-shopping-cart"></i></button></div></div></div></div></div>`
+        let prodBanner = document.querySelector(".cardcontainer__wrapper")
+        prodBanner.className = "wrapper-grey cardcontainer__wrapper"
+        let productos = `<div class="col-sm-6 w-100 text-center"><div class="card text-white w-100 m-5 background__size" style="background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url('${imgLink}')"><h5 class="card__name">${productName}</h5><div class="card__description"><p class="product__description"></p><p class="card__text">${productPrice} ${priceUnit}</p><button type="button" class="btn btn-link">Añadir al carrito <i class="fa fa-shopping-cart"></i></button></div></div></div>`
         prodContainer.innerHTML += productos;
     }
 }

@@ -97,3 +97,7 @@ color: lightsalmon;
 .background__size{
     background-size: cover !important;
 }
+.card__display{
+    position: relative;
+    display: contents;
+}
