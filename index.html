@@ -1,0 +1,130 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"
+        integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link rel="stylesheet" href="index.css">
+    <title>Contador días</title>
+</head>
+
+<body>
+    <!--Barra navegador-->
+    <div class="banner navbar__bg">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12">
+                    <nav class="navbar">
+                        <span class="navbar-brand mb-0 h1">eCommerce</span>
+                        <i class="fa fa-shopping-cart navbar__icon"></i>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--Card row-->
+    <div class="banner cards__bg">
+        <div class="container">
+            <h1 class="text-center p-5">Categorias</h1>
+            <div class="row cards__row">
+                <!--Card 1-->
+                <div class="col-sm-4">
+                    <div class="card text-center card__border home__button">
+                        <img src="https://images.unsplash.com/photo-1523755231516-e43fd2e8dca5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=675&q=80"
+                            class="card__image" alt="Home">
+                        <div class="card-body card__body">
+                            <h5 class="card-title card__title">Home</h5>
+                            <p class="card-text card__text"></p>
+                        </div>
+                    </div>
+                </div>
+                <!--Card 2-->
+                <div class="col-sm-4">
+                    <div class="card text-center card__border electronics__button">
+                        <img src="https://images.unsplash.com/photo-1498049794561-7780e7231661?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80"
+                            class="card__image" alt="Electronics">
+                        <div class="card-body card__body">
+                            <h5 class="card-title card__title">Electronics</h5>
+                            <p class="card-text card__text"></p>
+                        </div>
+                    </div>
+                </div>
+                <!--Card 3-->
+                <div class="col-sm-4">
+                    <div class="card text-center card__border fashion__button">
+                        <img src="https://images.unsplash.com/photo-1557777586-f6682739fcf3?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=675&q=80"
+                            class="card__image" alt="Fashion">
+                        <div class="card-body card__body">
+                            <h5 class="card-title card__title">Fashion</h5>
+                            <p class="card-text card__text"></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--Fotos + falta gradient-->
+        <div class="wrapper-grey cardcontainer__wrapper products__container">
+            <div class="container">
+                <h1 class="text-center p-5">Productos</h1>
+                <div class="row">
+                    <div class="col-sm-6 w-100 text-center">
+                        <div class="card text-white w-100 background__size" style="background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url('https://images-na.ssl-images-amazon.com/images/I/71sueHDmhjL._SL1500_.jpg')">
+                            <h5 class="card__name">${Product name}</h5>
+                            <div class="card__description">
+                                <p class="product__description">${Description}</p>
+                                <p class="card__text">${Price} + ${Price unit}</p>
+                                <button type="button" class="btn btn-link">Añadir al carrito <i class="fa fa-shopping-cart"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--Footer-->
+        <div class="wrapper__footer">
+            <div class="container footer__container">
+                <div class="row">
+                    <div class="col-sm-4 p-0">
+                        <ul class="p-0 m-0">
+                            <li class="footer__li"><a class="footer__a" href="#">
+                                    <icon class="fa fa-youtube footer__icon"></icon>
+                                </a></li>
+                            <li class="footer__li"><a class="footer__a" href="#">
+                                    <icon class="fa fa-instagram footer__icon"></icon>
+                                </a></li>
+                            <li class="footer__li"><a class="footer__a" href="#">
+                                    <icon class="fa fa-facebook footer__icon"></icon>
+                                </a></li>
+                            <li class="footer__li"><a class="footer__a" href="#">
+                                    <icon class="fa fa-twitter footer__icon"></icon>
+                                </a></li>
+                        </ul>
+                    </div>
+                    <div class="col-sm-8 p-0">
+                        <span class="float-right">@eCommerce</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Optional JavaScript -->
+        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+        <script src="index.js"></script>
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+            integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+            crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+            integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+            crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+            integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+            crossorigin="anonymous"></script>
+</body>
+
+</html>

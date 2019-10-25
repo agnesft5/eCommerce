@@ -1,0 +1,99 @@
+.cards__row{
+    padding:10%;
+}
+.card__image {
+width: 7rem;
+height: 25vh;
+width: 76%;
+margin-top: 9%;
+margin-bottom: 2%;
+}
+.card__body{
+padding-top:0;
+text-shadow:none;
+color:black;
+}
+.card__title{
+margin-top: 5%;
+margin-bottom: 0%;
+}
+.card__border{
+border: none;
+display: block;
+cursor: pointer;
+transition: 0.5s;
+}
+.cardcontainer__wrapper{
+padding: 8% 0;
+}
+.card__name{
+position: relative;
+margin-top: 3%;
+margin-left: 2%;
+font-size: 1.3rem;
+font-weight: normal;
+}
+.card__description{
+margin-left: 2%;
+margin-top: 31%;
+}
+.product__description{
+font-size: 1.2rem;
+margin-bottom: 7%;
+}
+.card__text{
+font-size: .9rem;
+width: 100%;
+}
+.card__userimg{
+border-radius: 50%;
+position: absolute;
+width: 15%;
+margin-left: 83%;
+margin-top: 2%;
+}
+.wrapper__footer{
+background-color: lightseagreen;
+color: white;
+padding: 3% 0;
+}
+.footer__container{
+line-height: 1;
+padding: 0;
+margin-top: 0;
+margin-bottom: 0;
+margin-right: 5%;
+margin-left: 10%;
+}
+.footer__li{
+display: inline-block;
+margin-right:6%;
+}
+.footer__a{
+color: white;
+font-size: 2rem;
+margin:2%;
+transition: color .5s ease-in-out;
+}
+.footer__a:hover{
+color: lightsalmon;
+}
+
+.navbar__bg{
+    background-color: lightseagreen;
+    color:white;
+}
+.navbar__icon{
+    float: right;
+    font-size: 1.5rem;
+}
+.cards__bg{
+    background-color:whitesmoke;
+}
+.card__border:hover{
+    opacity: 0.5;
+}
+
+.background__size{
+    background-size: cover !important;
+}
