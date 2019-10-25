@@ -51,6 +51,7 @@ function getArray() {
 let homeButton = document.querySelector(".home__button");
 let electronicsButton = document.querySelector(".electronics__button");
 let fashionButton = document.querySelector(".fashion__button");
+let categoriesButton = document.querySelector(".categorias__button");
 
 
 /////////////////// DADES CATEGORIA HOME/////////////////////
@@ -66,9 +67,11 @@ function getHome(arrayProductos) {
 
         let prodContainer = document.querySelector(".products__container")
         let prodBanner = document.querySelector(".cardcontainer__wrapper")
-        prodBanner.className = "wrapper-grey cardcontainer__wrapper"
+        let catBanner = document.querySelector(".cards__bg")
         let productos = `<div class="col-sm-6 w-100 text-center"><div class="card text-white w-100 m-5 background__size" style="background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url('${imgLink}')"><h5 class="card__name">${productName}</h5><div class="card__description"><p class="product__description"></p><p class="card__text">${productPrice} ${priceUnit}</p><button type="button" class="btn btn-link">Añadir al carrito <i class="fa fa-shopping-cart"></i></button></div></div></div>`
         prodContainer.innerHTML += productos;
+        prodBanner.className = "wrapper-grey cardcontainer__wrapper"
+        catBanner.className = "banner cards__bg d-none"
     }
 }
 
@@ -85,9 +88,11 @@ function getElectronics(arrayProductos) {
 
         let prodContainer = document.querySelector(".products__container")
         let prodBanner = document.querySelector(".cardcontainer__wrapper")
-        prodBanner.className = "wrapper-grey cardcontainer__wrapper"
+        let catBanner = document.querySelector(".cards__bg")
         let productos = `<div class="col-sm-6 w-100 text-center"><div class="card text-white w-100 m-5 background__size" style="background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url('${imgLink}')"><h5 class="card__name">${productName}</h5><div class="card__description"><p class="product__description"></p><p class="card__text">${productPrice} ${priceUnit}</p><button type="button" class="btn btn-link">Añadir al carrito <i class="fa fa-shopping-cart"></i></button></div></div></div>`
         prodContainer.innerHTML += productos;
+        prodBanner.className = "wrapper-grey cardcontainer__wrapper"
+        catBanner.className = "banner cards__bg d-none"
     }
 }
 
@@ -104,10 +109,22 @@ function getFashion(arrayProductos) {
 
         let prodContainer = document.querySelector(".products__container")
         let prodBanner = document.querySelector(".cardcontainer__wrapper")
-        prodBanner.className = "wrapper-grey cardcontainer__wrapper"
+        let catBanner = document.querySelector(".cards__bg")
         let productos = `<div class="col-sm-6 w-100 text-center"><div class="card text-white w-100 m-5 background__size" style="background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url('${imgLink}')"><h5 class="card__name">${productName}</h5><div class="card__description"><p class="product__description"></p><p class="card__text">${productPrice} ${priceUnit}</p><button type="button" class="btn btn-link">Añadir al carrito <i class="fa fa-shopping-cart"></i></button></div></div></div>`
         prodContainer.innerHTML += productos;
+        prodBanner.className = "wrapper-grey cardcontainer__wrapper"
+        catBanner.className = "banner cards__bg d-none"
     }
+}
+
+/////////////////// BORRAR DATOS ////////////////////
+function borrarDatos() {
+    let prodContainer = document.querySelector(".products__container")
+    let prodBanner = document.querySelector(".cardcontainer__wrapper")
+    let catBanner = document.querySelector(".cards__bg")
+    prodContainer.innerHTML ="";
+    prodBanner.className = "wrapper-grey cardcontainer__wrapper d-none"
+    catBanner.className = "banner cards__bg"
 }
 
 
@@ -130,4 +147,8 @@ electronicsButton.addEventListener("click", () => {
 fashionButton.addEventListener("click", () => {
     getArray()
     getFashion(arrayProductos)
+})
+
+categoriesButton.addEventListener("click",()=>{
+    borrarDatos();
 })
